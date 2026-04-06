@@ -1,0 +1,37 @@
+{
+  "name": "@asdsadw12312dwd2112xz/knex-config-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to generate Knex.js configuration and migration files",
+  "type": "module",
+  "bin": {
+    "knex-config": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "knex",
+    "knexjs",
+    "cli",
+    "migration",
+    "database",
+    "config"
+  ],
+  "license": "MIT"
+}
